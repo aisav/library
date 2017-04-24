@@ -17,12 +17,12 @@ app.set('view engine', 'ejs');    //using ejs in the views
 app.engine('html', require('ejs').renderFile);    //views has html type
 
 // all files rendered under public dir(home)
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, 'client')));
 
 //for json
 app.use(bodyParser.json());
 //for parsing any URL, false for only string
-app.use(bodyParser.urlencoded({ extended: true}));
+app.use(bodyParser.urlencoded({ extended: false}));
 
 app.use('/',index);
 app.use('/api',api);
