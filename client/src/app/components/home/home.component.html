@@ -1,0 +1,54 @@
+<app-book></app-book>
+<br>
+<router-outlet></router-outlet>
+
+////////////////////////////////////////////////////////////////
+<div id="wrapper">
+<div id="left">
+<h1>{{leftTitle}}</h1>
+<!--////////////////////////////////////-->
+<div class="container">
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Gender</th>
+        <th>Author</th>
+        <th>Book</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>july@example.com</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--///////////////////////////////////////-->
+</div>
+<div id="right">
+<h1>{{rightTitle}}</h1>
+</div>
+</div>
+<style>
+#wrapper {width: 100%; margin: auto;}
+#left { width: 60%; float: left;}
+#right { width: 40%; float: right}
+</style>
+
+
+
+
+
+
