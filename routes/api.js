@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://root:root@ds115411.mlab.com:15411/library', ['books']);
+var config = require('../config')
+var db = mongojs(config.database);
 
 //get all books
 router.get('/books', function(req, res, next){
